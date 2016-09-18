@@ -9,6 +9,7 @@ The program ms8236usb receives the active LCD information and translates this to
 
 To save the information to a log file at the command line enter :
     $ ms8236usb > log
+When you have saved enough log data type Control+C to quit logging.
     
 Example log entry:
   -36.34 mV DC Auto Sat Sep 17 16:19:16 2016
