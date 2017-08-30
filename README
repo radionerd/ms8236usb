@@ -29,3 +29,10 @@ INSTALLATION INSTRUCTIONS
     
   To run the software enter :
     $ ms8236usb
+
+CORRELATING WITH OTHER STREAMS
+Multimeter readings can be combined with another log or stream source uinsg a third party tool [lmerge](https://github.com/rianhunter/lmerge) as follows:
+```
+lmerge <(tail -n1 -f /path/to/file) <(ms8236usb) | tee /tmp/combined-output
+```
+`tail` can be replaced by anything streaming to `STDOUT`.
