@@ -92,6 +92,7 @@ void prtime(void)
 
     /* Print to stdout. ctime() has already added a terminating newline character. */
     (void) printf("%s", c_time_string);
+    fflush(stdout);
 }
 
 void 	decode_digit(unsigned char raw_digit )
